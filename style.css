@@ -325,3 +325,43 @@ body {
     text-align: center;
     cursor: pointer;
   }
+
+
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode nav,
+.dark-mode section,
+.dark-mode .skill,
+.dark-mode .project-card {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+#darkModeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#typed-text::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
